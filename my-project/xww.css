@@ -1,0 +1,46 @@
+/*正文中第一个<P>的样式*/
+p_start{
+  LINE-HEIGHT: 180%; text-indent: 0em; font-size: 14pt;font-weight:bold
+}
+
+/*正文最后一个<P>的样式*/
+p_end{
+  INE-HEIGHT: 180%; text-indent: 0em; font-size: 14pt;text-align:right;
+}
+
+/*正文中图片样式*/
+img {
+  width:expression(this.width > 600 ? "600px" : this.width);border-bottom-style: none; border-right-style: none; margin: 5px; border-top-style: none; border-left-style: none
+}
+
+/*正文中视频样式*/
+video {
+  border-bottom-style: none; border-right-style: none; margin: 5px; border-top-style: none; border-left-style: none
+}
+
+/*正文中段落样式*/
+p {
+  line-height: 40px; text-indent: 2em; font-size: 20px
+}
+
+/*正文中链接样式*/
+a {
+  color: #1e50a2; text-decoration: underline
+}
+a:hover {
+  color: #ba2636
+}
+
+/*正文中表格样式*/
+table {
+  border-collapse:collapse;border:1px solid #000
+}
+table th {
+  text-indent: 0px; margin: 0px; font-size: 1px
+}
+table td {
+  border:1px solid #000;text-indent: 0px; margin: 0px; font-size: 20px
+}
+table td img {
+  border-bottom-style: none; border-right-style: none; margin: 5px; border-top-style: none; border-left-style: none
+}
