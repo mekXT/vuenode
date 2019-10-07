@@ -22,6 +22,18 @@
         </van-col>
       </van-row>
 
+      <van-row style="margin-top:15px;">
+        <van-col span="24">
+
+          <van-swipe :autoplay="3000">
+            <van-swipe-item v-for="(image, index) in images" :key="index">
+              <img :src="image.url" style="width:100%;height:150px;"/>
+            </van-swipe-item>
+          </van-swipe>
+
+        </van-col>
+      </van-row>
+
       <van-tabbar route>
       <van-tabbar-item
         replace
@@ -33,14 +45,14 @@
       <van-tabbar-item
         replace
         to="/history"
-        icon="home-o"
+        icon="orders-o"
       >
         历史
       </van-tabbar-item>
       <van-tabbar-item
         replace
         to="/mine"
-        icon="search"
+        icon="contact"
       >
         我的
       </van-tabbar-item>
@@ -51,7 +63,8 @@
     export default {
         data() {
             return {
-              keyword:""
+              keyword:"",
+              images:[{url:"https://img.yzcdn.cn/vant/apple-1.jpg"},{url:"https://img.yzcdn.cn/vant/apple-2.jpg"},{url:"https://img.yzcdn.cn/vant/apple-3.jpg"},{url:"https://img.yzcdn.cn/vant/apple-4.jpg"}]
             }
         },
       methods:{

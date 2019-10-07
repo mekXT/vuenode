@@ -13,14 +13,14 @@
         <van-tabbar-item
           replace
           to="/history"
-          icon="home-o"
+          icon="orders-o"
         >
           历史
         </van-tabbar-item>
         <van-tabbar-item
           replace
           to="/mine"
-          icon="search"
+          icon="contact"
         >
           我的
         </van-tabbar-item>
