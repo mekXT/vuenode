@@ -10,10 +10,19 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/api':{
+        target:'http://localhost:8090/api/',  //设置调用的接口端口号等
+        changeOrigin:true,  //允许跨域
+        secure:true,  //允许https请求
+        pathRewrite:{
+          '^/api':''  //用'/api'代替target里面的地址
+        }
+      }
+    },
 
     // Various Dev Server settings
-    host: '192.168.3.109', // can be overwritten by process.env.HOST
+    host: '192.168.3.117', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
